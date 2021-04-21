@@ -1,0 +1,128 @@
+Explain foundational concepts used to define big data. 
+
+2
+
+2
+Describe how organizations manage big data.
+
+3
+
+3
+Summarize how individuals in an organization extract insights from big data.
+
+4
+
+4
+Give examples of real-world use-cases for big data analytics in a variety of industries.
+
+BIG DATA CHARACTERISTICS:
+
+VOLUME, VELOCITY, VARIETY
+
+VOL - amount of data being generated every secon d of every day.
+VEL - The speed at wich data is generated
+VAR - The different types of data generated
+
+VAR categories:
+
+structured, unstructured, semi-structured
+
+structured conforms to a schema
+
+unstructured
+"messy" data, because it isnt easily searched compared to structured data.
+
+semi-structured 
+Semi-structured data does not reside in a formatted table, but it does have some level of organization. 
+ex. HTML
+
+APACHE SPARK
+
+distrub proccessing
+
+we are the driver
+
+or friends are simple executors
+
+the problem is a job
+
+to finish the job we need to agg the simple executors.
+
+batch vs streaming data
+
+Batch data is data that we have in storage and that we process all at once, or in a batch.
+
+streaming data must be processed incrementally as it arrives.
+
+
+DATA STORAGE SYSTEM
+Once we've collected and processed batch and streaming data, we need somewhere to put it.
+
+- Data warehouse
+- Data lakes
+- Lake Plataform
+
+
+Data Warehouse DW - centralized repository for storing all of an organization's data.
+     can be on-premisses or in the cloud.
+     ben: work well for structured data and are reliable;
+          generally only take structured data, data is typically clean and easy to query.
+
+     challenges:
+	  hard expensive to scale (if you need more space, for example);
+	  lose a lot of valuable potential by not taking advantafe of unstructured data.
+	  vendor lock-in (bloqueio de fornecedor);
+	  expensive to build, license and mantain, especially for large data vols, even
+	  with the availability of cloud storage;
+
+
+Data Lake - store in raw format.
+	store structed and non-structed data.
+	is easy to keep addiing more data into data lakes
+
+     ben: hold different type of data
+ 	  easier to scale since they are sually cloud-based
+	  they rely on cloud storage, wich is cheap.
+	  allow organizations to separete data storage costs from data compute costs.
+	  only pay for computer costs once you need to do something with it.
+
+     challenges:
+     	  a bit of learning curve for individuals infamiliar with working with raw data or dificultings navigating a data lake;
+	  due to larger volumes of data and the occasional lack of structure, query speeds can ve impacted in
+	  traditional data lakes.
+
+
+Lake House Plataform:
+	  store and manage all of an organization's data.
+	  
+	  ben: single source of truth for our data and can guarantee the validity of that data.
+	  third party service mainaning your own physical infrastructure.
+	  easily scalable - in storage and compute;
+	  organizations a collaborative space wjere members of data teams with various levels of programming ability can work together;
+
+- Techniques for working with big data
+whole point of working with big data: to be able to extract insights that can help drive business decisions. 
+
+AI def: Artificial intelligence (AI) is a branch of computer science in which computer systems are developed to perform tasks that would typically need human intelligence. 
+
+Machine learning (ML) is a subset of artificial intelligence that works very well with structured data. The goal behind machine learning is for machines to learn patterns in your data without you explicitly programming them to do so. There are a few types of machine learning; the most commonly used type is called supervised machine learning. 
+
+Deep learning (DL) is a subset of machine learning that uses sets of algorithms modeled by the structure of the human brain (also called neural networks). They are much more complex than most machine learning models and require significantly more time and effort to build. Unlike machine learning which plateaus after a certain amount of data, deep learning continues to improve as data size increases. It performs well on complex datasets like images, sequences, and natural language. 
+
+Data science is a field that combines tools and workflows from disciplines like math and statistics, computer science and business, to process, manage and analyze data. Data science is very popular in businesses today as a way to extract insights from big data to help inform business decisions. 
+
+Why big data?
+
+With big data analytics, we are able to do things like: 
+
+
+Understand our customers better - Who are our customers? What do they like? How do they use our products?
+
+Improve our products - Do we need to make changes to our products? What types of changes should we make? What do people like most about our product? 
+
+Protect our businesses - Are we investing money in the correct things? Will the risks we take pay off?  
+
+Stay ahead of the competition - Who are our biggest competitors? How will we do with upcoming trends in our industry? 
+
+
+
